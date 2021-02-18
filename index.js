@@ -109,7 +109,7 @@ async function handleRequestForOthers(request) {
       'img#avatar',
       new AttributeTransformer(
         'src',
-        'https://res.cloudinary.com/ekwuno/image/upload/v1597065308/obinna_speaks_Ekwuno.jpg',
+        'https://res.cloudinary.com/ekwuno/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1611487810/IMG_6312.jpg',
       ),
     )
     .on('h1#name', new TextTransformer('obinnacodes'))
