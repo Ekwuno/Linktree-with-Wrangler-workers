@@ -1,3 +1,9 @@
+var links = [
+  { name: 'Twitter', url: 'https://twitter.com/Obinnaspeaks' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ekwunoobinna/' },
+  { name: 'Website', url: 'https://www.obinnaspeaks.dev/' },
+]
+
 
 addEventListener('fetch', event => {
   console.log(event)
@@ -10,11 +16,6 @@ addEventListener('fetch', event => {
   }
 })
 
-var links = [
-  { name: 'Twitter', url: 'https://twitter.com/Obinnaspeaks' },
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ekwunoobinna/' },
-  { name: 'Website', url: 'https://www.obinnaspeaks.dev/' },
-]
 
 class LinksTransformer {
   constructor(links) {
