@@ -51,6 +51,15 @@ class TextTransformer {
   }
 }
 
+class SetTransformer {
+  constructor(name) {
+    this.name = name
+  }
+  async element(element) {
+    element.setInnerContent(this.name)
+  }
+}
+
 class BodyTransformer {
   constructor(name) {
     this.name = name
@@ -122,7 +131,7 @@ async function handleRequestForOthers(request) {
     .on('h1#name', new TextTransformer('obinnacodes'))
     .on('div#social', new SocialTransformer(svgs))
     .on('div#social', new ProfileTransformer())
-    .on('title', new TextTransformer('Obinna Ekwuno'))
+    .on('title', new SetTransformer('Obinna Ekwuno'))
     .on('body', new AttributeTransformer('class', 'bg-red-400'))
     .transform(html)
   return new Response(rewrter.body, {
